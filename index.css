@@ -12,18 +12,20 @@ body {
 header {
     background: #c4f8d5;
     color:#333;
-    padding: 0.2 rem 0; 
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
- main {background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0.5%, rgb(77, 147, 55) 63%);}
+
+   
+ main {background: rgb(237, 236, 236);
+    background: linear-gradient(180deg, rgb(76, 231, 97) 0.5%, rgb(77, 147, 55) 63%);}
 .container {
     max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    margin:     0 auto;
+    padding:0px 20px;
 }
 
 .header-content {
@@ -35,7 +37,10 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+
 }
+
+    
 
 nav ul li {
     margin: 0 15px;
@@ -45,6 +50,15 @@ nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 1rem;
+}
+
+nav ul li a:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 12px rgb(134, 187, 234); 
+    color: #03b815;
+    font-size: 20px;
+    border-radius: 5px;
+    
 }
 
 .hamburger {
@@ -81,29 +95,49 @@ nav ul li a {
 
 section {
     padding: 20px 20px;
-    min-height: 64vh;
+    min-height: 100vh;
     scroll-margin-top: 80px; 
 }
-main { margin-top: 105px;
+/* main { margin-top:20vh;
 
-}
-h1, h3 {
-    text-align: center;
-;
-}
+} */
+    
+
+
 h2 {
     margin-left: 5px; 
     background-color: rgb(62, 73, 73); border-radius: 8px;
     margin-bottom: 5px;
 }
-.inicio p { display: flex;
+h1{text-align: center;
+font-size: 38px;}
+
+#inicio {background-image: url('imagenes/servicio1.png'); /* Cambia 'ruta-a-tu-imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; 
+    background-position: center;
+     background-attachment: fixed;
+      color: white; /* Cambia el color del texto a blanco */
+       padding: 20px; position: relative;
+        min-height: 100vh; /* Altura mínima para cubrir toda la pantalla */ 
+        display: flex;
+         flex-direction: column; 
+          justify-content: center;
+          align-items: center;
+           text-align: center; }
+           
+           #inicio h1, #inicio h3
+            { background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */ 
+        padding: 10px;
+         border-radius: 5px; margin: 10px 180px; }
+
+.nosotros p { display: flex;
     justify-content: center;
     align-items: center;
     text-align: right;
     margin: auto 80px;
    
 }
-.inicio img {
+.nosotros img {
         width: 100%; 
         max-width:600px; 
         height: auto; 
@@ -115,12 +149,16 @@ h2 {
 .texto  {
     display: flex;
     margin-top: 30px;
+    
 }
 #servicios h3{
-    margin: 40px 500px;
-    background-color:#14376d;
+    margin: 40px 50px;
+    background-color: rgb(8, 1, 24); background: linear-gradient(180deg, rgb(124, 130, 248) 0.5%, rgb(6, 20, 169) 63%);
     border-radius: 5px;
 border-color: snow;
+text-align: center;
+color:white;
+
 }
 #servicios h4{
     font-size: 18px;
@@ -324,8 +362,9 @@ footer a:hover {
     .mobile-menu.active {
         display: flex;
     }
+    .texto  {flex-wrap: wrap;
 }
-
+}
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
