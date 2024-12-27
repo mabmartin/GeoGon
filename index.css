@@ -102,7 +102,7 @@ section {
 
 } */
     
-
+.mobile-menu.active { display: flex; /* Asegúrate de tener esta clase para mostrar el menú */ }
 
 h2 {
     margin-left: 5px; 
@@ -130,7 +130,7 @@ font-size: 38px;}
         padding: 10px;
          border-radius: 5px; 
          margin: 10px 180px; }
-         
+
          .botones { margin-top: 20px; 
             display: flex;
              justify-content: center;
@@ -367,7 +367,7 @@ footer a:hover {
     nav ul {
         display: none;
     }
-
+    .desktop-menu { display: none; }
     .hamburger {
         display: flex;
     }
@@ -381,6 +381,13 @@ footer a:hover {
     }
     .texto  {flex-wrap: wrap;
 }
+.nosotros p { display: flex;
+    
+    text-align: center;
+    
+   
+}
+h2{text-align: center;}
 }
 .whatsapp-icon {
     position: fixed;
