@@ -128,7 +128,24 @@ font-size: 38px;}
            #inicio h1, #inicio h3
             { background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */ 
         padding: 10px;
-         border-radius: 5px; margin: 10px 180px; }
+         border-radius: 5px; 
+         margin: 10px 180px; }
+         
+         .botones { margin-top: 20px; 
+            display: flex;
+             justify-content: center;
+              gap: 20px; /* Espacio entre botones */ }
+               .botones button { padding: 10px 20px;
+                 font-size: 16px; 
+                 color: #ffffff;
+                 background-color: rgba(0, 0, 0, 0.5);;
+                   border: 2px solid #007BFF;
+                    border-radius: 5px;
+             cursor: pointer;
+              transition: background-color 0.3s; }
+
+               .botones button:hover { background-color: #0056b3; 
+            font-size: 20px;}
 
 .nosotros p { display: flex;
     justify-content: center;
