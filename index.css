@@ -60,10 +60,17 @@ nav ul li a:hover {
     border-radius: 5px;
     
 }
-
+.mobile-menu {
+    display: none;
+   
+}
+.mobile-menu.active {
+    display: block; /* Muestra el menú cuando se active */
+    
+}
 .hamburger {
     display: none;
-    flex-direction: column;
+    
     cursor: pointer;
 }
 
@@ -74,24 +81,15 @@ nav ul li a:hover {
     margin: 4px 0;
 }
 
-.mobile-menu {
-    display: none;
-    background: #444;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-}
 
-.mobile-menu ul {
-    flex-direction: column;
-}
 
-.mobile-menu ul li {
-    text-align: center;
-    padding: 10px 0;
-}
 
+
+
+
+
+  
+ 
 
 section {
     padding: 20px 20px;
@@ -102,7 +100,7 @@ section {
 
 } */
     
-.mobile-menu.active { display: flex; /* Asegúrate de tener esta clase para mostrar el menú */ }
+
 
 h2 {
     margin-left: 5px; 
@@ -328,15 +326,13 @@ font-size: 40px;
 padding: 20px;}
 
 .redes {
-    display: flex
-    ;
+        display: flex;
         text-align: center;
        
         flex-wrap: nowrap;
         justify-content: space-evenly;
 }
-.telefono{      display: flex
-    ;
+.telefono{      display: flex;
         justify-content: center;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -367,28 +363,47 @@ footer a:hover {
     nav ul {
         display: none;
     }
-    .desktop-menu { display: none; }
-    .hamburger {
-        display: flex;
-    }
-
-    .mobile-menu {
+    .desktop-menu{
         display: none;
     }
-
-    .mobile-menu.active {
-        display: flex;
+    .hamburger {
+        display: block;
+       
     }
+    .mobile-menu.active {
+        display: block;}
+    
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #14376d;
+        }
+
+    .mobile-menu li {
+        margin: 10px 0;;
+    }
+    .mobile-menu  a {
+       
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        
+    }
+   
+
+   
     .texto  {flex-wrap: wrap;
-}
+     }
 .nosotros p { display: flex;
     
     text-align: center;
     
    
-}
+ }
 h2{text-align: center;}
-}
+
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
@@ -398,4 +413,19 @@ h2{text-align: center;}
     background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center / cover;
     z-index: 1000;
     cursor: pointer;
+}
+.cards-container {
+    display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+.gallery img:nth-child(2) {
+    grid-row: span ; 
+  }
+
+
+
+
 }

@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios geológicos y de perforación para agua potable y análisis geotécnico. Contáctanos para más información.">
+    <meta name="keywords" content="geología, perforación, agua potable, análisis geotécnico, estudio de suelos">
+
     <title>GEOGON</title>
     <link rel="stylesheet" href="index.css">
 
@@ -58,11 +61,16 @@
 
 
                 <div class="texto">
-                    <p>Nos dedicamos a brindar estudios geológicos en suelo para diferentes obras e infraestructuras,
-                        con el objetivo de garantizar la seguridad, la estabilidad y la durabilidad de las estructuras.
-                        Ofrecemos el servicio de perforaciones para pozos de agua, como así también los análisis
-                        geoquímicos.
-                        Estudios petrológicos para la descripción y clasificación de rocas mediante microscopía.
+                    <p>
+                        Nos dedicamos a brindar estudios geológicos en suelo para diferentes obras e infraestructuras, con el objetivo de garantizar la seguridad, estabilidad y durabilidad de las estructuras.
+Ofrecemos el servicio de perforaciones para pozos de agua, como así también los análisis geoquímicos.
+Estudios petrológicos para la descripción y clasificación de rocas mediante microscopía.
+
+                        
+                        
+                        
+                        
+                        
                     </p>
                     <img class="nosotros"
                         src="imagenes/pngtree-exploring-the-vibrant-layers-and-textures-of-earth-s-soil-composition-image_13660033.png"
@@ -76,10 +84,10 @@
         <section id="servicios">
             <h2>Servicios</h2>
             <h3>GEOTÉCNICA</h3>
-            <p>Estos estudios evalúan las características geotécnicas del suelo y las rocas en un sitio de construcción,
-                con el objetivo de proporcionar información esencial para el diseño y la construcción de estructuras.
-                Esto incluye la realización de pruebas de campo y de laboratorio para determinar las propiedades físicas
-                y mecánicas del suelo, así como la evaluación de las condiciones geológicas y geotécnicas del área.</p>
+            <p>Se evalúan las características geotécnicas del suelo y las rocas con el objetivo de proporcionar información esencial para el diseño y
+                 la construcción de estructuras.
+                 Esto incluye la realización de pruebas de campo y de laboratorio para determinar las propiedades físicas y mecánicas del suelo,
+                  así como la evaluación de las condiciones geológicas y geotécnicas del área</p>
             <div class="cards-container">
                 <div class="card">
                     <img src="imagenes/servicio1.png" alt="Servicio 1">
@@ -198,22 +206,24 @@
     </main>
 
     <footer>
-        <a href="https://www.facebook.com/share/14PL6rRJp4/"> <i class="fa-brands fa-square-facebook"></i></a><a
-            href=https://www.instagram.com/geo.perfo?igsh=aXpyaG91YmJqamN1> <i
-                class="fa-brands fa-square-instagram"></i></a><a href="https://gmail.com"> <i
-                class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.facebook.com/share/14PL6rRJp4/" aria-label="facebook"> <i class="fa-brands fa-square-facebook"></i></a>
+        <a href=https://www.instagram.com/geo.perfo?igsh=aXpyaG91YmJqamN1> <i class="fa-brands fa-square-instagram" aria-label="Instagram"></i></a>
+        <a href="https://gmail.com" aria-label="gmail"> <i class="fa-solid fa-envelope"></i></a>
         <p>&copy; 2024 M.Bruni - Todos los derechos reservados.</p>
     </footer>
 
-    <a href="https://wa.me/+5493571602038" target="_blank" class="whatsapp-icon"></a>
+    <a href="https://wa.me/+5493571602038" aria-label="whatsapp" target="_blank" class="whatsapp-icon"></a>
 
     <script>
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
+      // Referencias a los elementos en el DOM
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
 
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
+// Agregar el evento al hacer clic en el icono del hamburger
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active'); // Alternar la clase 'active' en el menú móvil
+});
+
        
         function validateForm() {
     const nombre = document.forms["contactForm"]["nombre"].value;
