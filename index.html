@@ -218,13 +218,16 @@ Estudios petrológicos para la descripción y clasificación de rocas mediante m
       // Referencias a los elementos en el DOM
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
-
+const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
 // Agregar el evento al hacer clic en el icono del hamburger
 hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('active'); // Alternar la clase 'active' en el menú móvil
 });
-
-       
+for (let link of mobileMenuLinks) {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+}
         function validateForm() {
     const nombre = document.forms["contactForm"]["nombre"].value;
     const apellido = document.forms["contactForm"]["apellido"].value;
